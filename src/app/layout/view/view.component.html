@@ -1,60 +1,42 @@
-<div>Login</div>
-<div>Email</div>
-<input matInput type="email">
+ <!-- <form class="example-form">
+   <mat-label>Login</mat-label>
+   <section>
+     <mat-form-field class="example-full-width" appearance="fill">
+       <div>Email</div>
+       <input matInput type="email" formControl="emailFormControl">
+       <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+         Please enter a valid email address
+       </mat-error>
+       <mat-error *ngIf="emailFormControl.hasError('required')">
+         Email is <strong>required</strong>
+       </mat-error>
+     </mat-form-field>
 
-<div>Password</div>
-<input matInput type="password">
+     <mat-form-field class="example-full-width" appearance="fill">
+       <div>Password</div>
+       <input matInput type="password" formControl="passwordFormControl">
+       <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
+         Email is <strong>required</strong>
+       </mat-error>
+     </mat-form-field>
+   </section>
+   <div>
+     <section>
+       <div class="example-button-row example-label">
+         <button (click)="loginWithGoogle()" mat-raised-button color="accent"
+           class=" google-login-btn buttonClass">Google</button>
+       </div>
+     </section>
+   </div>
+ </form> -->
 
-<div>
-  <button mat-raised-button>Login</button>
-  <button (click)="loginWithGoogle()" mat-raised-button class="google-login-btn">Google</button>
-</div>
+ <div>Email</div>
+ <input matInput type="email">
 
+ <div>Password</div>
+ <input matInput type="password">
 
+ <div>
+   <button type="submit" mat-raised-button color="accent" (click)="loginWithGoogle()">Google</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <button type="submit" (click)="loginWithGoogle()">Login to your google account</button> -->
-<!-- <button mat-raised-button color="accent" (click)="onSubmit()">Accent</button>
-{{data.json}} -->
-<!--
-  <table mat-table [dataSource]="data" class="mat-elevation-z8">
-    <ng-container matColumnDef="userId">
-      <th mat-header-cell *matHeaderCellDef> UserId </th>
-      <td mat-cell *matCellDef="let element of data"> {{element.userId}} </td>
-    </ng-container>
-
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> id </th>
-    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="title">
-    <th mat-header-cell *matHeaderCellDef> title </th>
-    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
-  </ng-container>
-
-
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table> -->
+ </div>

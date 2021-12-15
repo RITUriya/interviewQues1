@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,8 @@ import { MainComponent } from './main/main.component';
 import { AuthGuardService } from './auth-guard.service';
 import { AlbumsComponent } from './albums/albums.component';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -30,11 +34,14 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
     CommonModule,
+    MatInputModule,
     AppRoutingModule,
     HttpClientModule,
     MatTableModule,
-
+    MatButtonModule,
     // RouterModule.forRoot([
     //   { path: 'login', component: ViewComponent },
     //   {

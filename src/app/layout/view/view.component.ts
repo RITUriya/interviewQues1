@@ -1,7 +1,13 @@
-import { EverythingService } from './../../services/everything.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GoogleLoginProvider, SocialAuthService } from 'angularx-social-login';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+} from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-view',
@@ -15,10 +21,13 @@ export class ViewComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+  emailFormControl = new FormControl('', [Validators.required]);
+  passwordFormControl = new FormControl('', [Validators.required]);
 
   loginWithGoogle(): void {
     this.socialAuthService
       .signIn(GoogleLoginProvider.PROVIDER_ID)
       .then(() => this.router.navigate(['main']));
+    console.log('logged in');
   }
 }
