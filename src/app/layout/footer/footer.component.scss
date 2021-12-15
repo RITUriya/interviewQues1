@@ -1,0 +1,21 @@
+$footer-color: green;
+$footer-margin: 20px;
+$text-padding: 10px;
+
+.page-footer-body {
+  background-color: pink;
+  padding: $text-padding;
+  float: none;
+}
+
+.text-md-left {
+  color: $footer-color;
+  margin: $footer-margin $footer-margin;
+  //padding: auto;
+}
+.footer-copyright {
+  font-size: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 5px;
+  float: inherit;
+}

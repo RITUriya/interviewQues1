@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<button type="submit" (click)="albumList()">Album List</button>
+
+
+<div *ngIf="data">
+  <div class="container">
+    <table class="table table-responsive table-striped">
+      <tr>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+      </tr>
+      <tr *ngFor="let row of data">
+        <td>{{row.userId}}</td>
+        <td>{{row.id}}</td>
+        <td>{{row.title}}</td>
+      </tr>
+    </table>
+    <div>
+
+    </div>
+    <ng-container>
+      <ng-template #noData></ng-template>
+    </ng-container>
+    <app-footer></app-footer>
