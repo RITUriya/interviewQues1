@@ -1,4 +1,42 @@
-.mat-raised-button {
-  color: lightcoral;
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+.container {
+  background-color: burlywood;
+}
+.example-form {
+  min-width: 20px;
+  max-width: 30px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 50%;
+  margin-bottom: 3px;
+  border-bottom: black;
+}
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+div {
   font-weight: inherit;
+  font-size: 20px;
+}
+.mat-form-field-underline {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  transform: scale3d(1, 1.0001, 1);
+}
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+  margin: 20px;
+  padding-top: 30px;
+  padding-left: 8px;
 }

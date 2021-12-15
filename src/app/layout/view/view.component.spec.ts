@@ -8,12 +8,12 @@ describe('ViewComponent', () => {
   let component: ViewComponent;
   let fixture: ComponentFixture<ViewComponent>;
   let service: EverythingService;
-  it('checked #onSubmit()', () => {
-    const clCheck = new ViewComponent(service);
-    expect(clCheck.onSubmit);
-    clCheck.onSubmit();
-    expect(clCheck.onSubmit());
-  });
+  // it('checked #onSubmit()', () => {
+  //   const clCheck = new ViewComponent(service);
+  //   expect(clCheck.onSubmit);
+  //   clCheck.onSubmit();
+  //   expect(clCheck.onSubmit());
+  // });
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

@@ -1,4 +1,3 @@
-import { EverythingService } from './services/everything.service';
 import { Component } from '@angular/core';
 
 @Component({
