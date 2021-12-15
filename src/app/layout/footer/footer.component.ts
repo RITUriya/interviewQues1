@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { number, date } from 'joi';
 
 @Component({
   selector: 'app-footer',
