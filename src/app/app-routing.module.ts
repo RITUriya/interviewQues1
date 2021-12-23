@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
-import { AuthGuardService } from './auth-guard.service';
+import { AuthGuardService } from '../../auth-guard.service';
 import { AlbumsComponent } from './albums/albums.component';
 import { ViewComponent } from './layout/view/view.component';
 

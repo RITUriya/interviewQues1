@@ -16,7 +16,7 @@ import { MatTableModule } from '@angular/material/table';
 import { GoogleLoginProvider, SocialAuthService } from 'angularx-social-login';
 import { RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
-import { AuthGuardService } from './auth-guard.service';
+import { AuthGuardService } from '../../auth-guard.service';
 import { AlbumsComponent } from './albums/albums.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

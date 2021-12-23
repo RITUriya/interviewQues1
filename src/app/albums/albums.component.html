@@ -1,16 +1,22 @@
 <app-header></app-header>
 
+<h2>Welcome to Albums Page!!!
+  Now Enjoy a wide range of Albums on just 1 click
+</h2>
+
 <button type="submit" mat-raised-button color="accent" (click)="albumList()">Album List</button>
 
 
 <div *ngIf="data">
   <div class="container">
     <table class="table table-responsive table-striped">
-      <tr>
-        <th>UserId</th>
-        <th>Id</th>
-        <th>Title</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>UserId</th>
+          <th>Id</th>
+          <th>Title</th>
+        </tr>
+      </thead>
       <tr *ngFor="let row of data">
         <td>{{row.userId}}</td>
         <td>{{row.id}}</td>

@@ -26,12 +26,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./src/styles.css",
+              "../interviewQues/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -94,14 +93,21 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "../interviewQues/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../interviewQues/node_modules/font-awesome/css/font-awesome.min.css",
+              "src/styles.scss",
+              "./src/styles.css",
+              "../interviewQues/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../interviewQues/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../interviewQues/node_modules/font-awesome/css/font-awesome.min.css",
+              "src/styles.scss",
+              "./src/styles.css",
+              "../interviewQues/node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ]
           }
         }
       }

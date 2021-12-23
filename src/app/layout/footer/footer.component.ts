@@ -9,6 +9,6 @@ export class FooterComponent implements OnInit {
   constructor() {}
   //displays current year
   currentDate: Date = new Date();
-  //newDate: any = this.currentYear | 'M/d/yy';
+
   ngOnInit(): void {}
 }
