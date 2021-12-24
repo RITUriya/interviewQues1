@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,6 +43,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HttpClientModule,
     MatTableModule,
     MatButtonModule,
+    MatGridListModule,
     // RouterModule.forRoot([
     //   { path: 'login', component: ViewComponent },
     //   {

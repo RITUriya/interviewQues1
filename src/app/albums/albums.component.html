@@ -7,6 +7,20 @@
 <button type="submit" mat-raised-button color="accent" (click)="albumList()">Album List</button>
 
 
+<!-- <mat-grid-list *ngIf="data" cols="3" rowHeight="2:1">
+  <mat-grid-tile>UserId</mat-grid-tile>
+  <mat-grid-tile>Id</mat-grid-tile>
+  <mat-grid-tile>Title</mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list *ngFor="let row of data">
+  <mat-grid-tile>{{row.userId}}</mat-grid-tile>
+  <mat-grid-tile>{{row.id}}</mat-grid-tile>
+  <mat-grid-tile>{{row.title}}</mat-grid-tile>
+
+</mat-grid-list> -->
+
+
+
 <div *ngIf="data">
   <div class="container">
     <table class="table table-responsive table-striped">
@@ -18,13 +32,12 @@
         </tr>
       </thead>
       <tr *ngFor="let row of data">
-        <td>{{row.userId}}</td>
+        <th>{{row.userId}}</th>
         <td>{{row.id}}</td>
         <td>{{row.title}}</td>
       </tr>
     </table>
     <div>
-
     </div>
     <ng-container>
       <ng-template #noData></ng-template>

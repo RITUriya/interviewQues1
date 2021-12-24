@@ -25,8 +25,9 @@ export class AlbumsComponent implements OnInit, OnDestroy {
     this.ev.fetchAlbumData().subscribe((data) => {
       this.data = data;
       if (this.data != null) {
-        console.log('data is null');
+        console.log('data is not null');
       }
+      window.localStorage.setItem('name', 'ritu');
     });
   }
 

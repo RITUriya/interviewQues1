@@ -24,6 +24,15 @@ export class HeaderComponent implements OnInit {
     this.socialAuthServive
       .signOut()
       .then(() => this.router.navigate(['login']));
+    console.log(localStorage.getItem('this.socialAuthServive.initState'));
+    setTimeout(() => {
+      console.log('timeout is working'), 1000;
+    });
+    console.log(navigator.platform);
+    // console.log(window.localStorage.setItem('name', 'ritu'));
+    console.log(window.localStorage.getItem('name'));
+    console.log(window.localStorage.clear());
+    //console.log(window.close());
   }
   onSubmit() {
     this.router.navigateByUrl('/albums');
